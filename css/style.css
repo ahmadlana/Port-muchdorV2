@@ -1,0 +1,698 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Section - White Background */
+.hero {
+    background: #fff;
+    padding: 60px 40px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1400px;
+    width: 100%;
+    gap: 80px;
+}
+
+.hero-text {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.hero-text h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: #000;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #000;
+    color: #fff;
+    padding: 18px 35px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.profile-pic {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff8c00 0%, #ffd700 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Introduction Section - Black Background */
+.about {
+    background: #000;
+    color: #ccc;
+    padding: 80px 40px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.about h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ccc;
+    flex: 1;
+}
+
+.about p {
+    flex: 2;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+/* Qualifications Section - Muted Blue-Gray Background */
+.qualification {
+    background: #b0bec5;
+    padding: 80px 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.qualification h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #37474f;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.qual-content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.qual-item {
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+
+.qual-item i {
+    font-size: 3rem;
+    color: #37474f;
+    margin-bottom: 20px;
+}
+
+.qual-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #37474f;
+    margin-bottom: 15px;
+}
+
+.qual-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #37474f;
+}
+
+.qual-item ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.qual-item ul li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #37474f;
+    position: relative;
+    padding-left: 20px;
+}
+
+.qual-item ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #37474f;
+}
+
+/* Work Experience Overview - Light Gray Background */
+.experience-overview {
+    background: #e0e0e0;
+    padding: 80px 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-overview h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #37474f;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.exp-overview-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.exp-overview-card {
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+
+.exp-overview-card i {
+    font-size: 3rem;
+    color: #37474f;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.exp-card-link:hover .exp-overview-card i {
+    color: #ff8c00;
+    transform: scale(1.1);
+}
+
+.exp-overview-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #37474f;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.exp-card-link:hover .exp-overview-card h3 {
+    color: #ff8c00;
+}
+
+.exp-overview-card span {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Read More Styling */
+.read-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ff8c00;
+    transition: all 0.3s ease;
+}
+
+.read-more i {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.exp-card-link:hover .read-more {
+    color: #e67e00;
+}
+
+.exp-card-link:hover .read-more i {
+    transform: translateX(3px);
+}
+
+/* Experience Card Links */
+.exp-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+}
+
+.exp-card-link:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #37474f;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Back Link Styling */
+.back-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover {
+    transform: translateX(-5px);
+}
+
+/* Detailed Experience Sections */
+.exp-detail {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+}
+
+.exp-detail-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.exp-detail-icon {
+    flex-shrink: 0;
+}
+
+.exp-detail-icon i {
+    font-size: 3rem;
+    color: #37474f;
+}
+
+.exp-detail-text {
+    flex: 1;
+}
+
+.exp-detail-text h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.exp-detail-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Personal Programmer - Muted Blue-Gray */
+.personal-programmer {
+    background: #b0bec5;
+}
+
+.personal-programmer .exp-detail-text h3,
+.personal-programmer .exp-detail-text p {
+    color: #37474f;
+}
+
+/* IT Support - Light Gray */
+.it-support {
+    background: #e0e0e0;
+}
+
+.it-support .exp-detail-text h3,
+.it-support .exp-detail-text p {
+    color: #37474f;
+}
+
+/* Project Manager - Black */
+.project-manager {
+    background: #000;
+}
+
+.project-manager .exp-detail-text h3,
+.project-manager .exp-detail-text p {
+    color: #ccc;
+}
+
+/* Contact Section - White Background */
+.contact {
+    background: #fff;
+    padding: 80px 40px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.profile-pic-small {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff8c00 0%, #ffd700 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.profile-pic-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-text {
+    flex: 1;
+}
+
+.contact-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.social-icons a {
+    color: #000;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff8c00;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background: #ff8c00;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hero-content,
+    .about-content,
+    .exp-detail-content,
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .qual-content,
+    .exp-overview-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .hero-text h1 {
+        font-size: 3.2rem;
+    }
+    
+    .about h2 {
+        font-size: 3rem;
+    }
+    
+    .qualification h2,
+    .experience-overview h2 {
+        font-size: 2.5rem;
+    }
+    
+    .exp-detail-text h3 {
+        font-size: 2rem;
+    }
+    
+    .contact-text h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero,
+    .about,
+    .qualification,
+    .experience-overview,
+    .exp-detail,
+    .contact {
+        padding: 40px 20px;
+        min-height: auto;
+    }
+    
+    .hero-content,
+    .about-content,
+    .exp-detail-content,
+    .contact-content {
+        gap: 30px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .about h2 {
+        font-size: 2.5rem;
+    }
+    
+    .about p {
+        font-size: 1rem;
+    }
+    
+    .qualification h2,
+    .experience-overview h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .qual-content,
+    .exp-overview-cards {
+        gap: 30px;
+    }
+    
+    .qual-item i,
+    .exp-overview-card i {
+        font-size: 2.5rem;
+    }
+    
+    .qual-item h3,
+    .exp-overview-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .exp-detail-text h3 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .exp-detail-text p {
+        font-size: 1rem;
+    }
+    
+    .contact-text h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-text p {
+        font-size: 1rem;
+    }
+    
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .profile-pic-small {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .social-icons {
+        gap: 20px;
+    }
+    
+    .social-icons a {
+        font-size: 2rem;
+    }
+    
+    /* Mobile Experience Card Links */
+    .exp-card-link {
+        padding: 15px;
+    }
+    
+    .exp-card-link:hover {
+        transform: translateY(-3px);
+    }
+    
+    .read-more {
+        margin-top: 12px;
+        font-size: 0.85rem;
+        gap: 4px;
+    }
+    
+    .read-more i {
+        font-size: 0.9rem;
+    }
+    
+    /* Mobile Back to Top Button */
+    .back-to-top {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero,
+    .about,
+    .qualification,
+    .experience-overview,
+    .exp-detail,
+    .contact {
+        padding: 30px 15px;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about h2 {
+        font-size: 2rem;
+    }
+    
+    .qualification h2,
+    .experience-overview h2 {
+        font-size: 1.8rem;
+    }
+    
+    .exp-detail-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .contact-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-pic-small {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .qual-item,
+    .exp-overview-card {
+        max-width: 250px;
+    }
+    
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 1rem;
+    }
+    
+    .read-more {
+        margin-top: 10px;
+        font-size: 0.8rem;
+        gap: 3px;
+    }
+    
+    .read-more i {
+        font-size: 0.85rem;
+    }
+} 
